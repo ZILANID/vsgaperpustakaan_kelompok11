@@ -20,7 +20,7 @@
 
 <div id="label-page"><h3>Edit Data Anggota</h3></div>
 <div id="content">
-	<form action="proses/edit-anggota-action.php" method="post" enctype="multipart/form-data">
+	<form action="controller/AnggotaController.php?action=editanggota" method="post" enctype="multipart/form-data">
 	<table id="tabel-input">
 		
 		<div class="form-group row">
@@ -95,7 +95,7 @@
 		<div class="form-group row">
             <label for="nama" class="col-sm-3 col-form-label">Alamat</label>
             <div class="col-sm-9">
-				<textarea rows="2" cols="40" id="alamat" name="alamat" class="isian-formulir isian-formulir-border"><?php echo $r_tampil_anggota['alamat']; ?></textarea>
+				<textarea rows="2" cols="40" id="alamat" name="alamat" class="form-control"><?php echo $r_tampil_anggota['alamat']; ?></textarea>
             </div>
         </div>
 		

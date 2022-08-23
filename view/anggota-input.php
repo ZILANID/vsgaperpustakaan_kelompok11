@@ -10,7 +10,7 @@
 		
 		<h4 class="card-title">Input Data Anggota</h4>
 		<div id="content">
-			<form action="proses/create-anggota-action.php" method="post" enctype="multipart/form-data">
+			<form action="controller/AnggotaController.php?action=inputanggota" method="post" enctype="multipart/form-data">
 			
 
 					<div class="form-group row">

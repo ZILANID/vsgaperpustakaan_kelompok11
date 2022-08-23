@@ -322,8 +322,8 @@
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="index.php?p=anggota">Data Anggota</a></li>
-                <li class="nav-item"> <a class="nav-link" href="skydash/pages/ui-features/dropdowns.html">Data Buku</a></li>
-                <li class="nav-item"> <a class="nav-link" href="skydash/pages/ui-features/typography.html">Data User</a></li>
+                <li class="nav-item"> <a class="nav-link" href="skydash/view/ui-features/dropdowns.html">Data Buku</a></li>
+                <li class="nav-item"> <a class="nav-link" href="skydash/view/ui-features/typography.html">Data User</a></li>
               </ul>
             </div>
           </li>
@@ -335,8 +335,8 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Peminjaman</a></li>
-                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Pengembalian</a></li>
+                <li class="nav-item"><a class="nav-link" href="view/forms/basic_elements.html">Peminjaman</a></li>
+                <li class="nav-item"><a class="nav-link" href="view/forms/basic_elements.html">Pengembalian</a></li>
               </ul>
             </div>
           </li>
@@ -348,8 +348,8 @@
             </a>
             <div class="collapse" id="charts">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">Peminjaman</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">Pengembalian</a></li>
+                <li class="nav-item"> <a class="nav-link" href="view/charts/chartjs.html">Peminjaman</a></li>
+                <li class="nav-item"> <a class="nav-link" href="view/charts/chartjs.html">Pengembalian</a></li>
               </ul>
             </div>
           </li>
@@ -473,7 +473,7 @@
 	  <!-- END MENU -->
 	    <div class="main-panel">
 			<?php
-					$pages_dir='pages';
+					$pages_dir='view';
 					if(!empty($_GET['p'])){
 						$pages=scandir($pages_dir,0);
 						unset($pages[0],$pages[1]);

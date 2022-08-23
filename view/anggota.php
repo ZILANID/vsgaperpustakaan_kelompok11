@@ -6,8 +6,7 @@
 
 
 <div id="content">
-	<a target="_blank" href="index.php?p=create-anggota" type="button" class="btn btn-sm btn-outline-success btn-icon-text"><i class="ti-plus btn-icon-append"></i> Tambah </a>
-	<a target="_blank" href="pages/cetak-data-anggota.php" type="button" class="btn btn-sm btn-outline-info btn-icon-text"><i class="ti-printer btn-icon-append"> Print Data Anggota</i></a>
+	
 	<FORM CLASS="form-inline" METHOD="POST">
 	<div align="right">
 		<form method="post">
@@ -16,14 +15,24 @@
 	</FORM>
 	</p>
 	
-		 <div class="col-lg-12 grid-margin stretch-card">
+		<div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">DATA ANGGOTA</h4>
-                  <p class="card-description">
-                    Perpustakaan Online | <code>.data-anggota</code>
-                  </p>
-                  <div class="table-responsive">
+				
+				<div class="row">
+					<div class="col-lg-5">
+						<a target="_blank" href="index.php?p=anggota-input" type="button" class="btn btn-sm btn-outline-success btn-icon-text"><i class="ti-plus btn-icon-append"></i> Tambah </a>
+						<a target="_blank" href="controller/AnggotaController.php?action=cetakdataanggota" type="button" class="btn btn-sm btn-outline-info btn-icon-text"><i class="ti-printer btn-icon-append"> Print Data Anggota</i></a>
+					</div>
+					<div class="col-lg-7">
+					  <h4 class="card-title">DATA ANGGOTA</h4>
+					  <p class="card-description">
+						Perpustakaan Online | <code>.data-anggota</code>
+					  </p>
+					</div>
+				</div>
+				
+                <div class="table-responsive">
                     <table class="table table-striped">
                       <thead>
                         <tr>
@@ -136,9 +145,9 @@
                           </td>
 						  <td>
 						    <div>
-								<a title="Cetak Kartu Anggota" target="_blank" href="pages/cetak-kartu-anggota.php?id=<?php echo $r_tampil_anggota['id_anggota'];?>"> <button type="button" class="btn btn-primary btn-rounded btn-icon"><i class="ti-printer btn-icon-append"></i></button></a>
-								<a title="Edit Anggota" href="index.php?p=edit-anggota&id=<?php echo $r_tampil_anggota['id_anggota'];?>"> <button type="button" class="btn btn-success btn-rounded btn-icon"> <i class="ti-pencil-alt btn-icon-append"></i></button></a>
-								<a title="Hapus Anggota" href="proses/hapus-anggota-action.php?id=<?php echo $r_tampil_anggota['id_anggota']; ?>" onclick = "return confirm ('Apakah Anda Yakin Akan Menghapus Data Ini?')"> <button type="button" class="btn btn-danger btn-rounded btn-icon"> <i class="ti-trash btn-icon-append"></i></button></a>
+								<a title="Cetak Kartu Anggota" target="_blank" href="controller/AnggotaController.php?action=cetakkartuanggota&id=<?php echo $r_tampil_anggota['id_anggota'];?>"> <button type="button" class="btn btn-primary btn-rounded btn-icon"><i class="ti-printer btn-icon-append"></i></button></a>
+								<a title="Edit Anggota" href="index.php?p=anggota-edit&id=<?php echo $r_tampil_anggota['id_anggota'];?>"> <button type="button" class="btn btn-success btn-rounded btn-icon"> <i class="ti-pencil-alt btn-icon-append"></i></button></a>
+								<a title="Hapus Anggota" href="controller/AnggotaController.php?action=hapusanggota&id=<?php echo $r_tampil_anggota['id_anggota']; ?>" onclick = "return confirm ('Apakah Anda Yakin Akan Menghapus Data Ini?')"> <button type="button" class="btn btn-danger btn-rounded btn-icon"> <i class="ti-trash btn-icon-append"></i></button></a>
 							</div>
 	
                           </td>
@@ -156,10 +165,10 @@
 					}?>	
                       </tbody>
                     </table>
-                  </div>
                 </div>
-              </div>
             </div>
+            </div>
+        </div>
 	
 	<?php
 	if(isset($_POST['pencarian'])){
