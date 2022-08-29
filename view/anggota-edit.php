@@ -7,7 +7,11 @@
 			else
 				$foto = $r_tampil_anggota['foto'];
 ?>
+<<<<<<< HEAD
+<title>Edit Data Anggota | Sistem Perpustakaan Online</title>
+=======
 
+>>>>>>> 5dd9358ad42a289bceaab16c20855c159747ff6b
  <div class="content-wrapper">
           <div class="row">
             <div class="col-md-12 grid-margin">
@@ -63,12 +67,20 @@
 							echo " 
 								<div class='form-check form-check-primary'>
 									<label class='form-check-label'>
+<<<<<<< HEAD
+										<input type='radio' id='jenis_kelamin' name='jenis_kelamin' class='form-check-input' value='Pria' checked> Pria
+=======
 										<input type='checkbox' id='jenis_kelamin' name='jenis_kelamin' class='form-check-input' value='Pria' checked> Pria
+>>>>>>> 5dd9358ad42a289bceaab16c20855c159747ff6b
 									</label>
 								</div>
 								<div class='form-check form-check-primary'>
 									<label class='form-check-label'>
+<<<<<<< HEAD
+										<input type='radio' id='jenis_kelamin' name='jenis_kelamin' class='form-check-input' value='Wanita'> Wanita
+=======
 										<input type='checkbox' id='jenis_kelamin' name='jenis_kelamin' class='form-check-input' value='Wanita'> Wanita
+>>>>>>> 5dd9358ad42a289bceaab16c20855c159747ff6b
 									</label>
 								</div>";
 						}
@@ -77,12 +89,20 @@
 							echo "
 								<div class='form-check form-check-primary'>
 									<label class='form-check-label'>
+<<<<<<< HEAD
+										<input type='radio' id='jenis_kelamin' name='jenis_kelamin' class='form-check-input' value='Pria'> Pria
+=======
 										<input type='checkbox' id='jenis_kelamin' name='jenis_kelamin' class='form-check-input' value='Pria'> Pria
+>>>>>>> 5dd9358ad42a289bceaab16c20855c159747ff6b
 									</label>
 								</div>
 								<div class='form-check form-check-primary'>
 									<label class='form-check-label'>
+<<<<<<< HEAD
+										<input type='radio' id='jenis_kelamin' name='jenis_kelamin' class='form-check-input' value='Wanita' checked> Wanita
+=======
 										<input type='checkbox' id='jenis_kelamin' name='jenis_kelamin' class='form-check-input' value='Wanita' checked> Wanita
+>>>>>>> 5dd9358ad42a289bceaab16c20855c159747ff6b
 									</label>
 								</div>";
 					

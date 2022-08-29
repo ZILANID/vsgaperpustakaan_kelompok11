@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+ <title>Data Anggota | Sistem Perpustakaan Online</title>
+ 
+=======
+>>>>>>> 5dd9358ad42a289bceaab16c20855c159747ff6b
  <div class="content-wrapper">
           <div class="row">
             <div class="col-md-12 grid-margin">
@@ -131,10 +136,17 @@
                             <?php echo $r_tampil_anggota['alamat']; ?>
                           </td>
 						   <td>
+<<<<<<< HEAD
+                            <?php echo $r_tampil_anggota['status_anggota']; ?>
+							
+                            <div class="progress">
+								<?php if($r_tampil_anggota['status_anggota']=='Meminjam'){ ?>
+=======
                             <?php echo $r_tampil_anggota['status']; ?>
 							
                             <div class="progress">
 								<?php if($r_tampil_anggota['status']=='Meminjam'){ ?>
+>>>>>>> 5dd9358ad42a289bceaab16c20855c159747ff6b
 									<div class="progress-bar bg-warning" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								<?php }else{ ?>
 									<div class="progress-bar bg-success" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>

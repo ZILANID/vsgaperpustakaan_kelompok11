@@ -15,7 +15,11 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<<<<<<< HEAD
+  <!--<title>Sistem Perpustakaan Online</title>-->
+=======
   <title>Sistem Perpustakaan Online</title>
+>>>>>>> 5dd9358ad42a289bceaab16c20855c159747ff6b
   <!-- plugins:css -->
   <link rel="stylesheet" href="skydash/vendors/feather/feather.css">
   <link rel="stylesheet" href="skydash/vendors/ti-icons/css/themify-icons.css">
@@ -335,8 +339,13 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
+<<<<<<< HEAD
+                <li class="nav-item"><a class="nav-link" href="index.php?p=peminjaman">Peminjaman</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php?p=pengembalian">Pengembalian</a></li>
+=======
                 <li class="nav-item"><a class="nav-link" href="view/forms/basic_elements.html">Peminjaman</a></li>
                 <li class="nav-item"><a class="nav-link" href="view/forms/basic_elements.html">Pengembalian</a></li>
+>>>>>>> 5dd9358ad42a289bceaab16c20855c159747ff6b
               </ul>
             </div>
           </li>

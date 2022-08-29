@@ -68,7 +68,10 @@
 		$nama=$_POST['nama'];
 		$jenis_kelamin=$_POST['jenis_kelamin'];
 		$alamat=$_POST['alamat'];
+<<<<<<< HEAD
+=======
 		$alamat=$_POST['alamat'];
+>>>>>>> 5dd9358ad42a289bceaab16c20855c159747ff6b
 
 		If(isset($_POST['simpan'])){
 			
